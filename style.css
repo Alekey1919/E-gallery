@@ -2,6 +2,10 @@ body {
   background-color: #ffd6e1;
 }
 
+.body-active {
+  overflow: hidden;
+}
+
 .gallery-title,
 .gallery-description {
   font-family: "Goudy Bookletter 1911", serif;
@@ -15,12 +19,10 @@ body {
   font-size: 25px;
 }
 .screenshot {
-  /* border: 10px solid #ffeaf0; */
   transition: 0.4s;
 }
 
 .screenshot:hover {
-  /* border: 10px solid #ffeaf0; */
   transform: scale(1.3);
 }
 
@@ -52,7 +54,7 @@ body {
 .my-container {
   position: absolute;
   transition: 0.4s;
-  z-index: 2;
+  z-index: 5;
 }
 
 .games-button {
@@ -74,7 +76,7 @@ body {
 }
 
 .active-container {
-  margin-left: 230px;
+  margin-left: 150px;
 }
 
 .display-5 {
@@ -124,6 +126,7 @@ body {
   position: absolute;
   left: -15px;
   top: 10px;
+  z-index: 10;
 }
 
 .overlay-active {
@@ -149,21 +152,26 @@ body {
 
 .modal-body-list {
   list-style-type: none;
-  /* padding: 10px; */
 }
-
-/* .modal-body-list-item {
-  padding: 10px;
-} */
 
 .span-bold {
   font-weight: 600;
 }
 
-/* RESPONSIVE */
+/* Scrollbar */
 
-@media only screen and (max-width: 770px) {
-  .active-container {
-    margin-left: 150px;
-  }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: lightcoral;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffc1d2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffe3eb;
 }

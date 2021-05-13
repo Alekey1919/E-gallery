@@ -5,6 +5,7 @@ function activateSlideBar() {
   const container = document.querySelector(".my-container");
   sidebar.classList.toggle("active-nav");
   container.classList.toggle("active-container");
+  document.body.classList.toggle("body-active");
 }
 
 const slideBar = () => {

@@ -175,3 +175,38 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #ffe3eb;
 }
+
+@media only screen and (max-width: 1240px) and (min-width: 1200px) {
+  .fa-gamepad,
+  .fa-home {
+    color: #555;
+  }
+}
+
+@media only screen and (max-width: 1090px) and (min-width: 993px) {
+  .fa-gamepad,
+  .fa-home {
+    color: #555;
+  }
+}
+
+@media only screen and (max-width: 860px) and (min-width: 767px) {
+  .fa-gamepad,
+  .fa-home {
+    color: #555;
+  }
+}
+
+@media only screen and (max-width: 860px) and (min-width: 767px) {
+  .fa-gamepad,
+  .fa-home {
+    color: #555;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .fa-gamepad,
+  .fa-home {
+    color: #555;
+  }
+}

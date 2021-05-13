@@ -28,6 +28,7 @@ document.querySelectorAll(".box img").forEach((image) => {
     sidebar.classList.remove("active-nav");
     container.classList.remove("active-container");
     menubtn.removeEventListener("click", activateSlideBar);
+    document.body.classList.toggle("body-active");
 
     // Rendering the overlay content
     let containerImg = document.querySelector(".container-img");
@@ -129,6 +130,7 @@ document.querySelectorAll(".box img").forEach((image) => {
     document.querySelector("#btn-close-popup").addEventListener("click", () => {
       overlay.classList.remove("overlay-active");
       menubtn.addEventListener("click", activateSlideBar);
+      document.body.classList.remove("body-active");
     });
 
     // Overlay close listener
@@ -136,6 +138,7 @@ document.querySelectorAll(".box img").forEach((image) => {
       if (event.target.id === "overlay") {
         overlay.classList.remove("overlay-active");
         menubtn.addEventListener("click", activateSlideBar);
+        document.body.classList.remove("body-active");
       }
     });
   });

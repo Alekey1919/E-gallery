@@ -24,6 +24,7 @@ document.querySelectorAll(".box img").forEach((image) => {
     const sidebar = document.querySelector("#sidebar");
     const container = document.querySelector(".my-container");
     const menubtn = document.querySelector("#menu-btn");
+    menubtn.classList.toggle("games-and-home-buttons-active");
     overlay.classList.toggle("overlay-active");
     sidebar.classList.remove("active-nav");
     container.classList.remove("active-container");
@@ -131,6 +132,7 @@ document.querySelectorAll(".box img").forEach((image) => {
       overlay.classList.remove("overlay-active");
       menubtn.addEventListener("click", activateSlideBar);
       document.body.classList.remove("body-active");
+      menubtn.classList.remove("games-and-home-buttons-active");
     });
 
     // Overlay close listener
@@ -139,6 +141,7 @@ document.querySelectorAll(".box img").forEach((image) => {
         overlay.classList.remove("overlay-active");
         menubtn.addEventListener("click", activateSlideBar);
         document.body.classList.remove("body-active");
+        menubtn.classList.remove("games-and-home-buttons-active");
       }
     });
   });

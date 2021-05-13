@@ -71,6 +71,10 @@ body {
   right: 25px;
 }
 
+.games-and-home-buttons-active {
+  display: none;
+}
+
 .active-nav {
   margin-left: 0;
 }

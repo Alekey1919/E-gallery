@@ -39,6 +39,11 @@ body {
   background-color: #dad;
   transition: 0.4s;
   z-index: 1;
+  overflow-y: auto;
+}
+
+.navbar::-webkit-scrollbar {
+  width: 5px;
 }
 
 .nav-link {
@@ -178,6 +183,41 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #ffe3eb;
+}
+
+.container {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.col-md-4:last-of-type {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1200px) {
+  .col-md-4 {
+    width: 48%;
+    margin: 20px 11px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 990px) {
+  .col-md-4 {
+    width: 47%;
+    margin: 20px 11px;
+  }
+}
+
+@media (max-width: 990px) {
+  .col-md-4 {
+    width: 80%;
+    margin: 30px auto;
+  }
+
+  .col-md-4:first-of-type {
+    margin: 70px auto 30px auto;
+  }
 }
 
 @media only screen and (max-width: 1240px) and (min-width: 1200px) {

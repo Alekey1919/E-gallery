@@ -190,11 +190,6 @@ body {
   margin-bottom: 30px;
 }
 
-.col-md-4:last-of-type {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 @media only screen and (max-width: 1400px) and (min-width: 1200px) {
   .col-md-4 {
     width: 48%;

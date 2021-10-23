@@ -168,6 +168,30 @@ h1 {
   font-weight: 600;
 }
 
+.btn-secondary {
+  background-color: #ffeaf0 !important;
+  color: #555;
+  border-color: pink !important;
+}
+
+.btn-primary {
+  background-color: #ffd6e1 !important;
+  border-color: pink !important;
+  box-shadow: unset !important;
+  color: #555;
+}
+
+@media (max-width: 500px) {
+  .modal-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-body img {
+    margin-bottom: 10px;
+  }
+}
+
 /* Scrollbar */
 
 ::-webkit-scrollbar {
@@ -190,6 +214,8 @@ h1 {
   margin-top: 10px;
   margin-bottom: 30px;
 }
+
+/* Responsive */
 
 @media only screen and (max-width: 1400px) and (min-width: 1200px) {
   .col-md-4 {
@@ -216,6 +242,13 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 1440px) and (min-width: 1400px) {
+  .fa-gamepad,
+  .fa-home {
+    color: #555;
+  }
+}
+
 @media only screen and (max-width: 1240px) and (min-width: 1200px) {
   .fa-gamepad,
   .fa-home {
@@ -230,23 +263,17 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 860px) and (min-width: 767px) {
+@media only screen and (max-width: 580px) {
   .fa-gamepad,
   .fa-home {
     color: #555;
   }
-}
 
-@media only screen and (max-width: 860px) and (min-width: 767px) {
-  .fa-gamepad,
-  .fa-home {
-    color: #555;
+  .games-button {
+    margin-left: 5px !important;
   }
-}
 
-@media only screen and (max-width: 660px) {
-  .fa-gamepad,
-  .fa-home {
-    color: #555;
+  .home-button {
+    right: 5px;
   }
 }
